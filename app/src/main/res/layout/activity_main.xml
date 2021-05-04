@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:baselineAligned="false">
+
+
+    <fragment
+        android:id="@+id/fragment"
+        android:name="com.haristallat2001.car_info.List"
+        android:layout_width="410dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        tools:layout="@layout/fragment_list" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <fragment
+            android:id="@+id/fragment2"
+            android:name="com.haristallat2001.car_info.buttons"
+            android:layout_width="match_parent"
+            android:layout_height="89dp"
+            tools:layout="@layout/fragment_buttons" />
+
+        <fragment
+            android:id="@+id/fragment3"
+            android:name="com.haristallat2001.car_info.Details"
+            android:layout_width="match_parent"
+            android:layout_height="317dp"
+            tools:layout="@layout/fragment_details" />
+    </LinearLayout>
+</LinearLayout>
